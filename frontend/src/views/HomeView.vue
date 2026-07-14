@@ -1,6 +1,5 @@
 <template>
   <div class="home-page">
-    <!-- Hero Section -->
     <section class="hero-section">
       <div class="container py-5">
         <div class="row align-items-center g-4">
@@ -12,7 +11,7 @@
             </p>
             <div class="d-flex flex-wrap gap-2">
               <router-link to="/shop" class="btn btn-primary btn-lg">🛍️ ไปช้อปเลย</router-link>
-              <button class="btn btn-outline-light btn-lg">📞 ติดต่อเรา</button>
+              <router-link to="/contact" class="btn btn-outline-light btn-lg">📞 ติดต่อเรา</router-link>
             </div>
           </div>
           <div class="col-lg-6">
@@ -38,7 +37,6 @@
       </div>
     </section>
 
-    <!-- Stats Section -->
     <section class="stats-section">
       <div class="container py-5">
         <div class="row g-4 text-center">
@@ -70,7 +68,7 @@
       </div>
     </section>
 
-    <!-- Call to Action -->
+    <!-- 🎯 ส่วน Call to Action - เชิญชวนผู้ใช้ไปช้อปสินค้า -->
     <section class="cta-section">
       <div class="container py-5">
         <div class="cta-content text-center">
@@ -86,17 +84,22 @@
 </template>
 
 <style scoped>
+/* 🎨 ตัวแปรธีมสีและการจัดวาง */
 .home-page {
   background: linear-gradient(180deg, #f8fbff 0%, #ffffff 100%);
   min-height: 100vh;
 }
 
+/* Hero - พื้นหลังหลัก */
 .hero-section {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.8) 0%, rgba(118, 75, 162, 0.8) 100%), url(@/assets/image/bg.jpg);
+  background-size: cover;
+  background-position: center;
   color: white;
   padding: 3rem 0;
 }
 
+/* ป้ายแสดงสถานะพิเศษ */
 .hero-badge {
   display: inline-block;
   padding: 0.4rem 0.8rem;
@@ -106,6 +109,7 @@
   margin-bottom: 0.8rem;
 }
 
+/*  หัวข้อหลัก */
 .hero-title {
   font-size: 2.8rem;
   font-weight: 900;
@@ -113,6 +117,7 @@
   line-height: 1.2;
 }
 
+/*  ข้อความคำบรรยาย */
 .hero-text {
   font-size: 1.1rem;
   color: rgba(255,255,255,0.95);
@@ -121,6 +126,7 @@
   line-height: 1.6;
 }
 
+/*  cards */
 .feature-cards {
   display: grid;
   grid-template-columns: 1fr;
@@ -141,6 +147,7 @@
   transform: translateY(-4px);
 }
 
+/*  ไอคอนคุณลักษณะ */
 .feature-icon {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
@@ -157,6 +164,7 @@
   margin: 0;
 }
 
+/* ส่วนแสดงสถิติ */
 .stats-section {
   background: white;
   border-top: 1px solid #e2e8f0;
@@ -167,6 +175,7 @@
   padding: 2rem 1rem;
 }
 
+/*  ตัวเลขสถิติ */
 .stat-number {
   font-size: 2.5rem;
   font-weight: 900;
@@ -180,6 +189,7 @@
   margin: 0;
 }
 
+/*  ส่วนเรียกชวน Call to Action */
 .cta-section {
   background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
   color: white;
@@ -201,6 +211,7 @@
   margin-bottom: 1rem;
 }
 
+/*  Responsive สำหรับ Mobile */
 @media (max-width: 768px) {
   .hero-title {
     font-size: 2rem;

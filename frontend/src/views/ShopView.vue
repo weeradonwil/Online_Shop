@@ -9,7 +9,7 @@ const formatPrice = (price) => {
 };
 
 const getImageUrl = (imageName) => {
-  return new URL(`../image/${imageName}`, import.meta.url).href;
+  return new URL(`../assets/image/${imageName}`, import.meta.url).href;
 };
 
 onMounted(async () => {
