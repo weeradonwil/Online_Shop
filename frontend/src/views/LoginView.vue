@@ -1,6 +1,6 @@
 <template>
   <div class="login-page">
-    <!-- 🔐 ส่วน Hero -->
+    <!-- ส่วน Hero -->
     <section class="hero-section">
       <div class="container py-5">
         <h1 class="hero-title">เข้าสู่ระบบ</h1>
@@ -8,7 +8,7 @@
       </div>
     </section>
 
-    <!-- 🔑 ส่วนฟอร์มล็อกอิน -->
+    <!-- ส่วนฟอร์มล็อกอิน -->
     <div class="container py-5">
       <div class="row justify-content-center">
         <div class="col-lg-5">
