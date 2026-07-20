@@ -2,7 +2,6 @@
 
 import { ref, computed, onMounted } from "vue";
 import axios from "axios";
-import Navbar from "@/components/Navbar.vue";
 
 const products = ref([]);
 const currentPage = ref(1);
@@ -98,11 +97,6 @@ function changePage(page){
 
 
 <template>
-
-
-<!-- Navbar + Background -->
-
-<Navbar>
 
 
 <div class="shop-content">
@@ -276,9 +270,6 @@ function changePage(page){
 </div>
 
 
-</Navbar>
-
-
 </template>
 
 
@@ -298,7 +289,9 @@ Content
 
     width:95%;
 
-    padding-top:400px;   /* เพิ่มระยะห่างจาก Navbar */
+    margin:0 auto;
+
+    padding-top:40px;   /* ระยะห่างจาก Navbar */
 
     text-align:center;
 
